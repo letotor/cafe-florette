@@ -64,7 +64,8 @@ li {
 }
 
 .header  nav h1:hover,.header nav  a:hover{
-    background-color: rgb(175, 57, 62);
+    /* background-color: rgb(175, 57, 62); */
+    background-color: #222;
     /* padding:1em; */
 }
 
