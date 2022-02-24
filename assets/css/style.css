@@ -81,6 +81,7 @@ padding: 6px;
 .header nav a:hover{
     border: 1px dotted white;
     border-radius: 3px;
+    margin:0px -1px -2px -1px; /*correction de l'effet de bord avec le border*/
 }
 
 
