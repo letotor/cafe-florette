@@ -9,20 +9,32 @@ Reset CSS
     box-sizing: border-box;
    
 }
-html,body{
-     font-family: 'Open Sans', sans-serif;
-}
-a {
-    text-decoration: none;
-    color:#222;
-}
-
-
 /**
 * general
 **/
+html,body{
+     font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color:#222;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+p{
+    margin-bottom: 10px;
+}
+
+
 li {
     list-style: none;
+}
+
+.my-10{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 
@@ -47,26 +59,35 @@ li {
 
 
 .header nav h1 {
-    line-height: 1.5em;
+    line-height: 1.em;
     text-transform: uppercase;
+    text-shadow: rgba(255, 255, 255, 0.356) 2px 3px;
     color: rgb(65, 163, 131);
     font-size: x-large;
     padding-top: 1em;
     padding-left: 1em;
     padding-right: 1em;
-    
+
     
 }
-
-
+.header nav h1 a {
+border: 1px dotted white;
+border-radius: 8px;    
+padding: 6px;
+}
 .header nav a{
     color:white;
 }
+.header nav a:hover{
+    border: 1px dotted white;
+    border-radius: 3px;
+}
 
-.header  nav h1:hover,.header nav  a:hover{
+
+.header nav  a:hover{
     /* background-color: rgb(175, 57, 62); */
     background-color: #222;
-    /* padding:1em; */
+    /* padding: 2em; */
 }
 
 
@@ -83,7 +104,73 @@ li {
     /* border:2px solid blue; */
 }
 
-/* .header  nav h1:hover{
-    background-color:  lawngreen;
-    border-radius: 0px;
-} */
+.active{
+    background-color: #222;
+}
+
+
+/* Hero section vp-content*/
+.vp{
+    background-image: url('../images/cafe1.jpg');
+    width:100%;
+    height:700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.vp-content{
+    display: block;
+    max-width: 600px;
+    margin: auto;
+    padding:20px;
+    /* padding-top : 170px; */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  
+    color: white;
+    text-align: center;
+}
+
+.vp-content h1{
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.vp-content p{
+    margin: 1em 0;
+    letter-spacing: 0.5px;
+    line-height: 1.9em;
+    font-size: 18px;
+}
+
+.vp-content .separator{
+    background-color: #111;
+    height: 10px;
+    width: 100px;
+    margin:20px auto;
+    
+}
+.btn{
+    display: inline-block;
+    padding: 15px 20px;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 30px;
+    border:none;
+}
+
+.btn-primary{
+    background-color: white; 
+    color:#222;
+}
+.btn-primary:hover{
+    background-color: #222; 
+    color:white;
+}
+a.btn{
+    text-transform: uppercase;
+}
