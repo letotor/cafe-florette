@@ -66,20 +66,32 @@ li {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+.mt-10{
+    margin-top: 10px;
+}
 
 .py-20{
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
+.d-none{
+    display: none;
+}
+.d-over-none{
+    overflow: hidden;
+}
 
-
+.mt-0{
+    margin-top: 0;
+}
 
 
 /**********
 * HEANDER *
 ***********/ 
 .header{
+    display: block;
     background-color: #333;
     width: 100%;
     /* max-height: 200px; */
@@ -137,11 +149,6 @@ li {
 .header nav li a:hover{
     background-color: #222;
     color: rgb(178, 124, 71);
-    /* border: 1px dotted white;
-    border-radius: 3px; */
-    /*correction de l'effet de bord avec le border*/
-    /* margin:0px -1px -2px -1px; */
-
 }
 
 
@@ -150,7 +157,6 @@ li {
     margin:0;
     display: flex;
     flex-direction: row;
-    /* border:2px solid blue; */
 }
 
 .header  nav li a{
@@ -165,8 +171,12 @@ li {
     color: rgb(178, 124, 71);
     bottom:0;
     left: 0;
-    border-bottom: 2px solid  rgb(178, 124, 71);
+    border-bottom: 4px solid  rgb(178, 124, 71);
     width:100%;
+        /* border: 1px dotted white;
+    border-radius: 3px; */
+    /*correction de l'effet de bord avec le border*/
+    /* margin:0px -1px -2px -1px; */
 }
 
 .active{
@@ -178,15 +188,30 @@ li {
 *Hero section vp-content*
 *************************/
 .vp{
-    background-image: url('../images/cafe1.jpg');
     width:100%;
     height:90vh;/*700px*/
+    min-height: 300px;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin: 0 auto;
-}
 
+}
+.vp p{
+    overflow: hidden;
+}
+.vp-image-home{
+
+    background-image: url('../images/cafe1.jpg');
+}
+.vp-image-where{
+    background-image: url('../images/cafe2.png');
+    height:40vh;/*700px*/
+}
+.vp-image-contact{
+    background-image: url('../images/cafe3.jpg');
+    height:40vh;/*700px*/
+}
 .vp-content{
     display: block;
     max-width: 600px;
@@ -199,6 +224,7 @@ li {
   
     color: white;
     text-align: center;
+    overflow: hidden;
 }
 
 .vp-content h1{
