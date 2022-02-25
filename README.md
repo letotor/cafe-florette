@@ -1,9 +1,9 @@
 # Café Florette :coffee:
 
 
-![alt text](https://cafe-dgwebcreation.netlify.app/asset/images/capture1.png)
+![café florette picture](https://cafe-dgwebcreation.netlify.app/asset/images/capture1.png)
 
-## À propos du projet
+## À propos de cette homepage
 
 Café Florette est un cas de base en HTML et CSS
 
