@@ -1,17 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-/**
-Reset CSS
-**/
-
+/*********
+*RESET CSS
+**********/
 * {
     margin: 0;
     padding:0;
     box-sizing: border-box;
-   
 }
-/**
-* general
-**/
+
+/***********
+ * GENERAL *
+ ***********/
 html,body{
      font-family: 'Open Sans', sans-serif;
 }
@@ -32,13 +31,54 @@ li {
     list-style: none;
 }
 
+
+/****************************************
+ * GESTION DSE CONTENEURS  ET GENERIQUES *
+ ****************************************/
+.container{ /*CENTRE */
+    display:block;
+    overflow: hidden;
+    margin:auto;
+    height: auto;
+    max-width: 1000px;
+    text-align: center;
+
+
+}
+.container .left{
+   float:left;
+   width:50%; 
+  
+   
+}
+.container .right{
+   float:right;
+   width:50%; 
+
+}
+
+
 .my-10{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.py-10{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.py-20{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
 
-/* header */ 
+
+
+
+/**********
+* HEANDER *
+***********/ 
 .header{
     background-color: #333;
     width: 100%;
@@ -46,7 +86,13 @@ li {
     min-width: 300px;
 
 }
-
+.header__relief{
+   font-weight: 600;
+   /* color:white; */
+   font-style: italic;
+   text-transform: uppercase;
+   border-bottom: 2px dashed rgb(255 178 102);
+}
 .header nav{
     /* padding-top: 10px; */
     display: flex;
@@ -55,8 +101,9 @@ li {
     justify-content: space-between;
     ;
 }
-
-
+.header nav a{
+    color:white;
+}
 
 .header nav h1 {
     line-height: 1.em;
@@ -67,42 +114,59 @@ li {
     padding-top: 1em;
     padding-left: 1em;
     padding-right: 1em;
-
-    
 }
+
 .header nav h1 a {
-border: 1px dotted white;
-border-radius: 8px;    
-padding: 6px;
-}
-.header nav a{
-    color:white;
-}
-.header nav a:hover{
     border: 1px dotted white;
-    border-radius: 3px;
-    margin:0px -1px -2px -1px; /*correction de l'effet de bord avec le border*/
+    border-radius: 8px;    
+    padding: 6px;
+    transition-duration: 1.3s;
+}
+.header nav h1 a:hover {
+   letter-spacing: 1.7em;
+   color: rgb(178, 124, 71);
+   border:none;
+   text-shadow:none;
+   transition: linear;
+    transition-duration: 1.3s;
+  
 }
 
 
-.header nav  a:hover{
-    /* background-color: rgb(175, 57, 62); */
+
+.header nav li a:hover{
     background-color: #222;
-    /* padding: 2em; */
+    color: rgb(178, 124, 71);
+    /* border: 1px dotted white;
+    border-radius: 3px; */
+    /*correction de l'effet de bord avec le border*/
+    /* margin:0px -1px -2px -1px; */
+
 }
 
-
-
-.header  nav li a{
-    color:white;
-    padding: 2em;
-}
 
 .header  nav li {
+    
     margin:0;
     display: flex;
     flex-direction: row;
     /* border:2px solid blue; */
+}
+
+.header  nav li a{
+    position:relative;
+    color:white;
+    padding: 2em;
+}
+
+.header  nav li a:hover::before{
+    content: "";
+    position: absolute;
+    color: rgb(178, 124, 71);
+    bottom:0;
+    left: 0;
+    border-bottom: 2px solid  rgb(178, 124, 71);
+    width:100%;
 }
 
 .active{
@@ -110,11 +174,13 @@ padding: 6px;
 }
 
 
-/* Hero section vp-content*/
+/************************
+*Hero section vp-content*
+*************************/
 .vp{
     background-image: url('../images/cafe1.jpg');
     width:100%;
-    height:700px;
+    height:90vh;/*700px*/
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -142,6 +208,10 @@ padding: 6px;
 }
 
 .vp-content p{
+    color: rgb(255 178 102);
+    text-shadow: rgb(54, 48, 38) 1px 1px;
+
+    font-weight: 400;
     margin: 1em 0;
     letter-spacing: 0.5px;
     line-height: 1.9em;
@@ -155,6 +225,11 @@ padding: 6px;
     margin:20px auto;
     
 }
+
+/**
+* GESTION DES BUTTON
+**/
+
 .btn{
     display: inline-block;
     padding: 15px 20px;
@@ -164,14 +239,61 @@ padding: 6px;
     border:none;
 }
 
-.btn-primary{
+.btn-primary, .btn-secondary:hover{
     background-color: white; 
     color:#222;
 }
-.btn-primary:hover{
+
+.btn-secondary:hover{
+    border: 1px solid #222;
+    margin: -1px 0;
+}
+.btn-primary:hover, .btn-secondary{
     background-color: #222; 
     color:white;
 }
 a.btn{
     text-transform: uppercase;
+}
+
+.featured{
+    overflow: auto;
+    padding: 100px 0px 100px 0px;
+}
+
+
+
+
+
+/**
+*footer
+**/
+footer{
+    display : block;
+    position: absolute;
+    height: 50px;
+    margin: auto auto;
+    width:100%;
+    background-color: #333;
+  
+    text-align: center;
+}
+
+footer p{
+    position: relative;
+    transform: translateY(-50%);
+    top:50%;
+    color: white;
+    
+}
+
+.personne{
+    background-image: url('../images/cafe3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position: center;
+    width: 100%;
+    height:400px;
+
 }
