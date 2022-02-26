@@ -58,18 +58,28 @@ li {
 }
 
 
+.my-5{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 .my-10{
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.py-10{
-    padding-top: 10px;
-    padding-bottom: 10px;
+
+.my-20{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
+
 .mt-10{
     margin-top: 10px;
 }
 
+.py-10{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 .py-20{
     padding-top: 20px;
     padding-bottom: 20px;
@@ -95,7 +105,7 @@ li {
     background-color: #333;
     width: 100%;
     /* max-height: 200px; */
-    min-width: 300px;
+    min-width: 550px;
 
 }
 .header__relief{
@@ -200,14 +210,17 @@ li {
 .vp p{
     overflow: hidden;
 }
+
 .vp-image-home{
 
     background-image: url('../images/cafe1.jpg');
 }
+
 .vp-image-where{
     background-image: url('../images/cafe2.png');
     height:40vh;/*700px*/
 }
+
 .vp-image-contact{
     background-image: url('../images/cafe3.jpg');
     height:40vh;/*700px*/
@@ -249,9 +262,18 @@ li {
     height: 10px;
     width: 100px;
     margin:20px auto;
-    
 }
 
+
+.personne{
+    background: url('../images/cafe3.jpg') center center/cover;
+    /* background-size: cover;
+    background-position-x: center;
+    background-position: center; */
+    background-repeat: no-repeat;
+    width: 100%;
+    height:400px;
+}
 /**
 * GESTION DES BUTTON
 **/
@@ -262,33 +284,36 @@ li {
     font-weight: 700;
     font-size: 16px;
     border-radius: 30px;
-    border:none;
+    border:1px solid white;
 }
 
 .btn-primary, .btn-secondary:hover{
     background-color: white; 
     color:#222;
+    border:1px solid white;
 }
 
 .btn-secondary:hover{
     border: 1px solid #222;
-    margin: -1px 0;
 }
 .btn-primary:hover, .btn-secondary{
     background-color: #222; 
     color:white;
 }
-a.btn{
+
+.btn{
     text-transform: uppercase;
+}
+
+.btn:hover{
+    cursor: pointer;
+   
 }
 
 .featured{
     overflow: auto;
     padding: 100px 0px 100px 0px;
 }
-
-
-
 
 
 /**
@@ -313,13 +338,5 @@ footer p{
     
 }
 
-.personne{
-    background-image: url('../images/cafe3.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position: center;
-    width: 100%;
-    height:400px;
 
-}
+
