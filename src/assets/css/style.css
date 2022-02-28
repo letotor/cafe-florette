@@ -264,10 +264,9 @@ li {
 }
 
 .vp-image-where{
-    background-image: url('../images/cafe2.png');
-    height:40vh;/*700px*/
+    background: url('../images/gmap.png') center center/cover no-repeat ;
+    height: 20vh;
 }
-
 .vp-image-contact{
     background-image: url('../images/cafe3.jpg');
     height:40vh;/*700px*/
