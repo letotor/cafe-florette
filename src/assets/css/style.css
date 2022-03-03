@@ -221,13 +221,17 @@
      height: 20vh;
 }
  .vp-image-contact{
-     background-image: url('../images/cafe3.jpg');
-     height:40vh;
+     background: url('../images/cafe3.jpg') center center/cover no-repeat;
+     min-height:20vh;
+     width:100%;
+     height:50vh;
+     margin: 0 auto;
+     overflow: hidden;
     /*700px*/
 }
  .vp-content{
      display: block;
-     max-width: 600px;
+     max-width: 300px;
      margin: 0 auto;
      padding:20px;
      padding-top : 12%;
