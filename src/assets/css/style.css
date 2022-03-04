@@ -142,7 +142,7 @@
      color:white;
 }
  .header nav h1 {
-     line-height: 1.em;
+     line-height: 1.rem;
      text-transform: uppercase;
      text-shadow: rgba(255, 255, 255, 0.356) 2px 3px;
      color: rgb(65, 163, 131);
@@ -194,6 +194,7 @@
     /* margin:0px -1px -2px -1px;
      */
 }
+
  .active{
      background-color: #222;
 }
@@ -205,8 +206,8 @@
      min-height: 500px;
     /* max-width: 1000px;
      */
-     background-repeat: no-repeat;
-     background-size: cover;
+   
+  
      overflow: hidden;
      margin: 0 auto;
 }
@@ -214,7 +215,8 @@
      overflow: hidden;
 }
  .vp-image-home{
-     background-image: url('../images/cafe1.jpg');
+     background: url('../images/cafe1.jpg') center center/cover no-repeat;
+     
 }
  .vp-image-where{
      background: url('../images/gmap.png') center center/cover no-repeat ;
@@ -231,7 +233,7 @@
 }
  .vp-content{
      display: block;
-     max-width: 300px;
+     max-width: 50%;
      margin: 0 auto;
      padding:20px;
      padding-top : 12%;

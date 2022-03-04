@@ -1,0 +1,51 @@
+body{
+     background-color:aquamarine ;
+}
+.header nav{
+ display:block;
+ 
+
+}
+
+.header nav h1 {
+     text-align: center;
+     font-size: large;
+     line-height: 1rem;
+     border: 1px solid  coral;
+     padding: 20px;
+}
+
+
+.header nav li a {
+     padding: 1em;
+     font-size: large;
+}
+
+
+.header nav  ul  li{
+display: flex;
+ justify-content: space-between; 
+}
+
+.vp{
+     height: fit-content;
+}
+.vp-content{
+     max-width: none;  
+}
+
+.container .left{
+     padding-left: 1rem;
+     padding-right: 1rem;
+     float:none;
+     width:auto;
+}
+ .container .right{
+     padding-left: 1rem;
+     padding-right: 1rem;
+
+     float:none;
+     width:auto;
+}
+
+
