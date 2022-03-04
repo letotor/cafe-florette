@@ -61,3 +61,35 @@ flex-direction: column;
 
 
 
+.where{
+     padding: 80px 20px 50px 20px;
+
+}
+
+.where-img{
+     float: none;
+     display:block;
+     margin: 0 auto;
+     margin-bottom: 3rem;
+     width: 80%;
+     border: 0px solid #ddd;
+     border-radius: 5px;
+}
+
+.where-text{
+     padding-left: 30px;
+     text-align: left;
+     float: none;
+     width: 50%;
+}
+
+.contact-form-container {
+     margin:20px;
+
+}
+.contact-form-container h2{
+     margin: 0;
+}
+.contact-form-container form {
+     padding: 20px 40px
+}
