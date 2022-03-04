@@ -10,20 +10,26 @@
 .header nav h1 {
      text-align: center;
      font-size: large;
-     line-height: 1rem;
+     line-height: 1.1rem;
      /* border: 1px solid  coral; */
      padding: 20px;
+
+   
+}
+.header nav h1 a {
+border:none;
 }
 
-
 .header nav li a {
-     padding: 1em;
+     padding: 0.8em;
      font-size: large;
+    
 }
 
 
 .header nav  ul  li{
 display: flex;
+flex-direction: column;
  justify-content: space-between; 
 }
 
@@ -32,7 +38,12 @@ display: flex;
 }
 .vp-content{
      max-width: none;  
+   
 }
+.vp-content h1{
+     font-size: 40px;
+}
+
 
 .container .left{
      padding-left: 1rem;
@@ -47,5 +58,6 @@ display: flex;
      float:none;
      width:auto;
 }
+
 
 
